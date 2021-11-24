@@ -2,16 +2,20 @@ body{
     background-color: #E6746C;
 }
 
-#name{
+#about-me{
+	background-color: #E6D583;
+}
+
+.name{
     font: 300 2.5rem 'Josefin Sans', sans-serif;
 }
 
-#foto-de-perfil{
+.foto-de-perfil{
 	width: 150px;
 	border-radius: 50%;
 }
 
-#description{
+.description{
     font: italic 300 1rem 'Josefin Sans', sans-serif;
 }
 
