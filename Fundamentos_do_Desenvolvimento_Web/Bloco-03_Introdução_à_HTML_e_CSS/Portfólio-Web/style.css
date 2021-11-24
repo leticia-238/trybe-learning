@@ -4,6 +4,15 @@ body{
 
 #about-me{
 	background-color: #E6D583;
+	padding: 20px;
+	max-width: 500px;
+	margin: auto;
+}
+.header{
+	text-align: center;
+}
+.container{
+	
 }
 
 .name{
