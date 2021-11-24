@@ -6,6 +6,11 @@ body{
     font: 300 2.5rem 'Josefin Sans', sans-serif;
 }
 
+#foto-de-perfil{
+	width: 150px;
+	border-radius: 50%;
+}
+
 #description{
     font: italic 300 1rem 'Josefin Sans', sans-serif;
 }
