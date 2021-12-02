@@ -1,0 +1,4 @@
+
+function palindromo(palavra){
+  
+}
