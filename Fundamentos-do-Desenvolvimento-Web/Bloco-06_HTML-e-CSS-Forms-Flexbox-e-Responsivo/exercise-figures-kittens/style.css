@@ -1,0 +1,121 @@
+/*================ RESET =================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+/*================= ROOT ==================*/
+:root {
+  /*---------- colors ---------------*/
+  --bgcolor1: #7ba6f7;
+  --bgcolor2: rgb(108 155 241);
+  --textcolor1: #e8e8e8;
+  --textcolor2: #404040;
+  --color-shadow: rgb(100 139 211);
+  --bottom-shadow: -1px 1px 10px var(--color-shadow);
+  --box-shadow: 0 0 10px var(--color-shadow);
+
+  /*------------- fonts -------------*/
+  --family1: Roboto, sans-serif;
+  --family2: "Arial", sans-serif;
+  --font-title: 700 2rem var(--family1);
+  --font-text1: 500 1.3rem var(--family2);
+  --font-text2: 300 1rem var(--family2);
+  --font-text3: 300 1.3rem var(--family2);
+}
+
+body {
+  background-color: var(--bgcolor2);
+}
+
+/*================ LAYOUT =================*/
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+/*============== COMPONENTS ===============*/
+.header {
+  background: var(--bgcolor1);
+  padding: 10px;
+  box-shadow: var(--bottom-shadow);
+}
+
+.title {
+  font: var(--font-title);
+  color: var(--textcolor1);
+}
+
+.sub-title {
+  font: var(--font-text1);
+  color: var(--textcolor1);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.box {
+  padding: 10px;
+  background: var(--bgcolor1);
+  box-shadow: var(--box-shadow);
+}
+
+.box-caption {
+  margin-top: 10px;
+  font: var(--font-text3);
+  text-align: center;
+  color: var(--textcolor2);
+}
+
+.section {
+  justify-content: center;
+}
+
+.content {
+  font: var(--font-text2);
+}
+
+.content p {
+  margin: 10px;
+  text-indent: 2rem;
+  color: var(--textcolor2);
+}
+
+/*============ MEDIA QUERIES =============*/
+
+@media (min-width: 576px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    padding: 20px;
+  }
+  .flex-container {
+    padding: 20px;
+  }
+  .header {
+    padding: 20px;
+  }
+  .box {
+    padding: 20px;
+  }
+}
